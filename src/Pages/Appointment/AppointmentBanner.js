@@ -4,11 +4,6 @@ import 'react-day-picker/dist/style.css';
 
 const AppointmentBanner = ({date,setDate}) => {
     
-
-    // let footer = <p>Please pick a day.</p>;
-    // if (date) {
-    //     footer = <p>You picked {format(date, 'PP')}.</p>;
-    // }
     return (
         <div className="hero min-h-screen">
             <div className="hero-content flex-col lg:flex-row-reverse">
@@ -18,7 +13,6 @@ const AppointmentBanner = ({date,setDate}) => {
                      mode="single"
                      selected={date}
                      onSelect={setDate}
-                    //  footer={footer}
                     />
                 </div>
             </div>
